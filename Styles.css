@@ -148,7 +148,7 @@ p {
   background-color: #f19cbb;
   color: white;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   min-height: 60vh;
 }
 .Member1,
@@ -171,7 +171,6 @@ p {
   align-items: center;
   text-align: center;
   min-height: 10vh;
-
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -227,13 +226,36 @@ p {
 
 @media (max-width: 600px) {
   p {
-    font-size: 15px;
+    font-size: 12px;
   }
   .Member1 img,
   .Member2 img,
   .Member3 img {
     max-height: 200px;
     max-width: 140px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .Member1 a img,
+  .Member3 a img {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .Member2 a img,
+  .Member2 p {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .Member1,
+  .Member2,
+  .Member3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .Telegram a img {
@@ -272,8 +294,9 @@ p {
     font-size: 19px;
   }
   .Header {
-    flex-direction: column;
+    flex-direction: column 2;
     justify-content: space-evenly;
+
     gap: 5px;
   }
 }
